@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Hugo Lui</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-container">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div id="home">
+                <div>
+                    <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
+                    <h2 class="home-description"> I'm an <span id="currentAge"></span> year old student at TMU</h2>
+                    <div class="home-button">
+                        <button class="generic-button">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="about">
+                <div class="content-section-1">
+                    <img class="content-image" src="" alt="Hugo Lui"/>
+                </div>
+                <div class="content-section-2">
+                    <h2 class="content-section-title">About Me</h2>
+                    <p class="content-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel voluptatum obcaecati et cum, molestias tempora aspernatur iusto sit blanditiis unde ex optio facere exercitationem tenetur nostrum dicta consequatur? Dolore.</p>
+                </div>
+            </div>
+            <div id="projects">
+                <h2 class="content-section-title">Projects</h2>
+                <div class="project-list">
+                    <!-- one project (copy and paste) -->
+                    <div class="project-item">
+                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
+                        <div class="content-section-text">
+                            <h3 class="project-title">Project Name 1</h3>
+                            <p>project description 1</p>
+                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                        </div>
+                    </div>
+                    <!-- one project (copy and paste) -->
+                    <div class="project-item">
+                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
+                        <div class="content-section-text">
+                            <h3 class="project-title">Project Name 2</h3>
+                            <p>project description 2</p>
+                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                        </div>
+                    </div>
+                    <!-- one project (copy and paste) -->
+                    <div class="project-item">
+                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
+                        <div class="content-section-text">
+                            <h3 class="project-title">Project Name 3</h3>
+                            <p>project description 3</p>
+                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="contact">        
+                <div class="content-section-2">
+                    <h2 class="content-section-title">Contact Me</h2>
+                    <p class="content-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel voluptatum obcaecati et cum, molestias tempora aspernatur iusto sit blanditiis unde ex optio facere exercitationem tenetur nostrum dicta consequatur? Dolore.</p>
+                </div>
+                <div class="content-section-1">
+                    <img class="content-image" src="" alt="Hugo Lui"/>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let currentYear = new Date().getFullYear;
+        let birthYear = 2004;
+        document.getElementById("currentAge").innerHTML = currentYear - birthYear;
+        let typed = new Typed(".auto-type", {
+            strings: ["^500Hugo Lui^1000", "^500a Developer^1000"],
+            typeSpeed: 100,
+            backSpeed: 100
+        })
+    </script>
+</html>
