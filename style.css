@@ -146,9 +146,23 @@ html {
     line-height: 30px;
 }
 
+.content-image-contact {
+    width: 80%;
+    padding-left: 20px;
+}
+
+.content-image-about {
+    width: 80%;
+}
+
 #contact-rightpadding {
     padding-left: 0px;
     padding-right: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #323232;
 }
 
 /* project section */
