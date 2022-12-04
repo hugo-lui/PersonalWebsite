@@ -20,9 +20,9 @@
             <div id="home">
                 <div>
                     <h1 class="home-title">Hi, I'm <span class="auto-type"></span></h1>
-                    <h2 class="home-description"> I'm an <span id="currentAge"></span> year old student at TMU</h2>
+                    <h2 class="home-description"> I'm an <span id="currentAge"></span> year old computer science student at TMU</h2>
                     <div class="home-button">
-                        <button class="generic-button">View More</button>
+                        <a href="https://github.com/hugo-lui"><button class="generic-button">View More</button></a>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="content-section-2">
                     <h2 class="content-section-title">About Me</h2>
-                    <p class="content-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel voluptatum obcaecati et cum, molestias tempora aspernatur iusto sit blanditiis unde ex optio facere exercitationem tenetur nostrum dicta consequatur? Dolore.</p>
+                    <p class="content-section-text">I am interested in back end development, </p>
                 </div>
             </div>
             <div id="projects">
@@ -40,29 +40,34 @@
                 <div class="project-list">
                     <!-- one project (copy and paste) -->
                     <div class="project-item">
-                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
                         <div class="content-section-text">
-                            <h3 class="project-title">Project Name 1</h3>
-                            <p>project description 1</p>
-                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                            <h3 class="project-title">Pokemon Management System</h3>
+                            <p class="paragraph-1">A pokemon card file management system in Java. Supports adding and editing albums, cards, and attributes.</p>
+                            <a href="https://github.com/hugo-lui/Pokemon"><button class="generic-button">View Project</button></a>
                         </div>
                     </div>
                     <!-- one project (copy and paste) -->
                     <div class="project-item">
-                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
                         <div class="content-section-text">
-                            <h3 class="project-title">Project Name 2</h3>
-                            <p>project description 2</p>
-                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                            <h3 class="project-title">Sudoku Solver</h3>
+                            <p class="paragraph-2">Solves a given sudoku grid using backtracking. Complete with a visualizer</p>
+                            <a href="https://github.com/hugo-lui/SudokuSolver"><button class="generic-button">View Project</button></a>
                         </div>
                     </div>
                     <!-- one project (copy and paste) -->
                     <div class="project-item">
-                        <div class="project-image-container"><img class="project-image-thumbnail" src="" alt="project item"/></div>
                         <div class="content-section-text">
-                            <h3 class="project-title">Project Name 3</h3>
-                            <p>project description 3</p>
-                            <a href="https://github.com/hugo-lui"><button class="generic-button">View Project</button></a>
+                            <h3 class="project-title">Landmass Generator</h3>
+                            <p class="paragraph-3">Random landmass generation in Unity using Perlin noise.</p>
+                            <a href="https://github.com/hugo-lui/UnityLandmass"><button class="generic-button">View Project</button></a>
+                        </div>
+                    </div>
+                    <!-- one project (copy and paste) -->
+                    <div class="project-item">
+                        <div class="content-section-text">
+                            <h3 class="project-title">Synonym Generator</h3>
+                            <p class="paragraph-4">Generates alternate sentences with synonyms using the DatamuseAPI.</p>
+                            <a href="https://github.com/hugo-lui/Synonyms"><button class="generic-button">View Project</button></a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +85,7 @@
     </body>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        let currentYear = new Date().getFullYear;
+        let currentYear = new Date().getFullYear();
         let birthYear = 2004;
         document.getElementById("currentAge").innerHTML = currentYear - birthYear;
         let typed = new Typed(".auto-type", {
