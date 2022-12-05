@@ -24,6 +24,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5fa;
 }
 
 .nav {
@@ -152,7 +156,7 @@ html {
 }
 
 .content-image-about {
-    width: 80%;
+    width: 100%;
 }
 
 #contact-rightpadding {
@@ -191,16 +195,7 @@ html {
     margin: 0 20px 20px 0;
 }
 
-.project-image-container {
-    flex-basis: 100%;
-}
-
 .project-text-container {
     flex-basis: 100%;
     padding: 10px 20px;
-}
-
-.project-image-thumbnail {
-    width: 100%;
-    border-radius: 15px;
 }
