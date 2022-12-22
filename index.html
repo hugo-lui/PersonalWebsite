@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="./assets/icon.png">
         <title>Hugo Lui</title>
+        <script src="./jquery-3.6.3.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -40,7 +41,7 @@
                 <h2 class="content-section-title">Projects</h2>
                 <div class="project-list">
                     <!-- one project (copy and paste) -->
-                    <div class="project-item">
+                    <div class="project-item fade">
                         <div class="content-section-text">
                             <h3 class="project-title">Pokemon Management System</h3>
                             <p class="paragraph-1">A pokemon card file management system in Java. Supports adding and editing albums, cards, and attributes.</p>
@@ -48,15 +49,15 @@
                         </div>
                     </div>
                     <!-- one project (copy and paste) -->
-                    <div class="project-item">
+                    <div class="project-item fade">
                         <div class="content-section-text">
-                            <h3 class="project-title">Sudoku Solver</h3>
+                            <h3 class="project-title">Sudoku<br>Solver</h3>
                             <p class="paragraph-2">Solves a given sudoku grid using backtracking. Complete with a visualizer</p>
                             <a href="https://github.com/hugo-lui/SudokuSolver"><button class="generic-button">View Project</button></a>
                         </div>
                     </div>
                     <!-- one project (copy and paste) -->
-                    <div class="project-item">
+                    <div class="project-item fade">
                         <div class="content-section-text">
                             <h3 class="project-title">Landmass Generator</h3>
                             <p class="paragraph-3">Random landmass generation in Unity using Perlin noise.</p>
@@ -64,7 +65,7 @@
                         </div>
                     </div>
                     <!-- one project (copy and paste) -->
-                    <div class="project-item">
+                    <div class="project-item fade">
                         <div class="content-section-text">
                             <h3 class="project-title">Synonym Generator</h3>
                             <p class="paragraph-4">Generates alternate sentences with synonyms using the DatamuseAPI.</p>
@@ -85,14 +86,5 @@
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        let currentYear = new Date().getFullYear();
-        let birthYear = 2004;
-        document.getElementById("currentAge").innerHTML = currentYear - birthYear;
-        let typed = new Typed(".auto-type", {
-            strings: ["^500Hugo Lui^1000", "^500a Developer^1000"],
-            typeSpeed: 100,
-            backSpeed: 100
-        })
-    </script>
+    <script src="./script.js"></script>
 </html>
