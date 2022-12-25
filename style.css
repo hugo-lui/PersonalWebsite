@@ -218,6 +218,7 @@ body {
     will-change: opacity, visibility;
   }
   .fade.visible {
+    z-index: -1;
     opacity: 1;
     transform: none;
     visibility: visible;
