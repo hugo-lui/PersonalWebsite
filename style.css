@@ -167,6 +167,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     padding-left: 5px;
+    height: 80px;
 }
 
 .project-list {
@@ -195,20 +196,9 @@ body {
     border-radius: 15px;
 }
 
-.paragraph-1 {
+.paragraph {
     padding-left: 10px;
-}
-
-.paragraph-2 {
-    padding: 28px 10px 32px;
-}
-
-.paragraph-3 {
-    padding: 28px 10px 61px;
-}
-
-.paragraph-4 {
-    padding: 25px 10px 29px;
+    height: 120px;
 }
 
 .fade {
